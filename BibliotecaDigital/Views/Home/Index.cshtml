@@ -3,31 +3,29 @@
 }
 
 <main>
-    <section class="row" aria-labelledby="aspnetTitle">
-        <h1 id="title">ASP.NET</h1>
-        <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
-        <p><a href="https://asp.net" class="btn btn-primary btn-md">Learn more &raquo;</a></p>
+    <section class="row" aria-labelledby="libraryTitle">
+        <h1 id="title">Biblioteca Virtual</h1>
+        <p class="lead">Organize e explore seu acervo literário com facilidade. Cadastre seus livros, adicione comentários, crie perfis de usuário e favorite suas leituras preferidas.</p>
     </section>
 
     <div class="row">
-        <section class="col-md-4" aria-labelledby="gettingStartedTitle">
-            <h2 id="gettingStartedTitle">Getting started</h2>
+        <section class="col-md-4" aria-labelledby="bookCatalogTitle">
+            <h2 id="bookCatalogTitle">Cadastre seus livros</h2>
             <p>
-                ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-                enables a clean separation of concerns and gives you full control over markup
-                for enjoyable, agile development.
+                Adicione seus livros à biblioteca e mantenha um registro organizado. Você pode inserir detalhes sobre cada obra e acompanhar suas leituras.
             </p>
-            <p><a class="btn btn-outline-dark" href="https://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
+            @Html.ActionLink("Saiba mais", "Index", "Livro", new { area = "" }, new { @class = "btn btn-outline-dark" })
+
         </section>
-        <section class="col-md-4" aria-labelledby="librariesTitle">
-            <h2 id="librariesTitle">Get more libraries</h2>
-            <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-            <p><a class="btn btn-outline-dark" href="https://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
+        <section class="col-md-4" aria-labelledby="userProfilesTitle">
+            <h2 id="userProfilesTitle">Crie perfis de usuário</h2>
+            <p>Crie perfis personalizados para gerenciar sua coleção de livros. Marque suas leituras, compartilhe impressões e interaja com outros usuários.</p>
+            @Html.ActionLink("Saiba mais", "Index", "Usuario", new { area = "" }, new { @class = "btn btn-outline-dark" })
         </section>
-        <section class="col-md-4" aria-labelledby="hostingTitle">
-            <h2 id="hostingTitle">Web Hosting</h2>
-            <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-            <p><a class="btn btn-outline-dark" href="https://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
+        <section class="col-md-4" aria-labelledby="favoritesTitle">
+            <h2 id="favoritesTitle">Favorite livros</h2>
+            <p>Marque seus livros favoritos e tenha fácil acesso a eles sempre que desejar. Organize suas leituras e compartilhe suas recomendações.</p>
+            @Html.ActionLink("Saiba mais", "Index", "Favorito", new { area = "" }, new { @class = "btn btn-outline-dark" })
         </section>
     </div>
 </main>

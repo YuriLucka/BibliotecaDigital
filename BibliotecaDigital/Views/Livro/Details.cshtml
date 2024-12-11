@@ -1,0 +1,70 @@
+﻿@model BibliotecaDigital.Models.Livro
+
+@{
+    ViewBag.Title = "Informações";
+}
+
+<h1>@Model.Titulo</h1>
+<h4>Informações</h4>
+<hr /><main class="d-flex justify-content-md-between align-items-start gap-5">
+    <dl class="dl-horizontal flex-grow-1">
+        <dt>
+            @Html.DisplayNameFor(model => model.Autor.Nome)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Autor.Nome)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Categoria.Nome)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Categoria.Nome)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Titulo)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Titulo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Descricao)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Descricao)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.UrlCapa)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.UrlCapa)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Status)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Status)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NumeroDePaginas)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.NumeroDePaginas)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PaginaAtual)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.PaginaAtual)
+        </dd>
+        @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+        @Html.ActionLink("Back to List", "Index")
+    </dl>
+    <img class="img-fluid" style="height: 400px;" src="@Model.UrlCapa" alt="Capa do livro @Model.Titulo" />
+</main>

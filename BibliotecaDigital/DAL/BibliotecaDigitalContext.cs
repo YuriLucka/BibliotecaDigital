@@ -16,5 +16,6 @@ namespace BibliotecaDigital.DAL
         public DbSet<Comentario> Comentarios { get; set; }
         public DbSet<Usuario> Usuarios { get; set; }
 
+        public System.Data.Entity.DbSet<BibliotecaDigital.Models.Favorito> Favoritoes { get; set; }
     }
 }

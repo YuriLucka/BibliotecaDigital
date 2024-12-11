@@ -7,13 +7,13 @@ namespace BibliotecaDigital.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.5.1")]
-    public sealed partial class TablesConfiguration : IMigrationMetadata
+    public sealed partial class AlterTableLivro : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(TablesConfiguration));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(AlterTableLivro));
         
         string IMigrationMetadata.Id
         {
-            get { return "202412111715104_TablesConfiguration"; }
+            get { return "202412111758572_AlterTableLivro"; }
         }
         
         string IMigrationMetadata.Source

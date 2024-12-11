@@ -27,6 +27,8 @@ namespace BibliotecaDigital.Models
         [Required]
         public int AutorID { get; set; }
         [Required]
+        public string UrlCapa { get; set; }
+        [Required]
         public StatusLivro Status { get; set; }
         [Required]
         public int NumeroDePaginas { get; set; }

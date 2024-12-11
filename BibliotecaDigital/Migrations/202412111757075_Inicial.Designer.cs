@@ -13,7 +13,7 @@ namespace BibliotecaDigital.Migrations
         
         string IMigrationMetadata.Id
         {
-            get { return "202412111632267_Inicial"; }
+            get { return "202412111757075_Inicial"; }
         }
         
         string IMigrationMetadata.Source
