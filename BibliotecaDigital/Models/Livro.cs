@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Web;
 
@@ -12,6 +13,7 @@ namespace BibliotecaDigital.Models
         EmAndamento,
         JaLido,
     }
+    [Table("Livros")]
     public class Livro
     {
         public int ID { get; set; }
