@@ -127,6 +127,8 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\AutorController.cs" />
+    <Compile Include="Controllers\CategoriaController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="DAL\BibliotecaDigitalContext.cs" />
     <Compile Include="Global.asax.cs">
@@ -136,21 +138,12 @@
     <Compile Include="Migrations\202412111632267_Inicial.Designer.cs">
       <DependentUpon>202412111632267_Inicial.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202412111642204_CreateTables.cs" />
-    <Compile Include="Migrations\202412111642204_CreateTables.Designer.cs">
-      <DependentUpon>202412111642204_CreateTables.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202412111645044_CreateTableFavorito.cs" />
-    <Compile Include="Migrations\202412111645044_CreateTableFavorito.Designer.cs">
-      <DependentUpon>202412111645044_CreateTableFavorito.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202412111650511_AlterNameTables.cs" />
-    <Compile Include="Migrations\202412111650511_AlterNameTables.Designer.cs">
-      <DependentUpon>202412111650511_AlterNameTables.cs</DependentUpon>
+    <Compile Include="Migrations\202412111715104_TablesConfiguration.cs" />
+    <Compile Include="Migrations\202412111715104_TablesConfiguration.Designer.cs">
+      <DependentUpon>202412111715104_TablesConfiguration.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Autor.cs" />
-    <Compile Include="Models\AutorLivro.cs" />
     <Compile Include="Models\Categoria.cs" />
     <Compile Include="Models\Comentario.cs" />
     <Compile Include="Models\Favorito.cs" />
@@ -209,6 +202,16 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Autor\Create.cshtml" />
+    <Content Include="Views\Autor\Delete.cshtml" />
+    <Content Include="Views\Autor\Details.cshtml" />
+    <Content Include="Views\Autor\Edit.cshtml" />
+    <Content Include="Views\Autor\Index.cshtml" />
+    <Content Include="Views\Categoria\Create.cshtml" />
+    <Content Include="Views\Categoria\Delete.cshtml" />
+    <Content Include="Views\Categoria\Details.cshtml" />
+    <Content Include="Views\Categoria\Edit.cshtml" />
+    <Content Include="Views\Categoria\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -244,14 +247,8 @@
     <EmbeddedResource Include="Migrations\202412111632267_Inicial.resx">
       <DependentUpon>202412111632267_Inicial.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202412111642204_CreateTables.resx">
-      <DependentUpon>202412111642204_CreateTables.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202412111645044_CreateTableFavorito.resx">
-      <DependentUpon>202412111645044_CreateTableFavorito.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202412111650511_AlterNameTables.resx">
-      <DependentUpon>202412111650511_AlterNameTables.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202412111715104_TablesConfiguration.resx">
+      <DependentUpon>202412111715104_TablesConfiguration.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

@@ -14,7 +14,7 @@ namespace BibliotecaDigital.Models
         [Required]
         public string Nome { get; set; }
 
-        public virtual ICollection<AutorLivro> AutorLivros { get; set; }
+        public virtual ICollection<Livro> Livros { get; set; }
 
     }
 }

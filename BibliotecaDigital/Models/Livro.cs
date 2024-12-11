@@ -25,6 +25,8 @@ namespace BibliotecaDigital.Models
         [Required]
         public int CategoriaID { get; set; }
         [Required]
+        public int AutorID { get; set; }
+        [Required]
         public StatusLivro Status { get; set; }
         [Required]
         public int NumeroDePaginas { get; set; }
@@ -33,8 +35,8 @@ namespace BibliotecaDigital.Models
 
 
         public virtual Categoria Categoria { get; set; }
+        public virtual Autor Autor { get; set; }
         public virtual ICollection<Comentario> Comentarios { get; set; }
-        public virtual ICollection<AutorLivro> AutorLivros { get; set; }
 
     }
 }
